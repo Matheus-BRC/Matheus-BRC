@@ -5,7 +5,7 @@ Matheus-BRC/Matheus-BRC is a ✨ special ✨ repository because its `README.md` 
 You can click the Preview link to take a look at your changes.
 --->
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Matheus-BRC&show_icons=true&theme=default#gh-light-mode-only)
+<!--- ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Matheus-BRC&show_icons=true&theme=default#gh-light-mode-only)--->
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Matheus-BRC&layout=compact)
 
 ##
