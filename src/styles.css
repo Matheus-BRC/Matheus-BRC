@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #39ace7;
+    /* background: linear-gradient(to bottom, #333333, #000000); */
+    background: linear-gradient(to bottom, black, #152331);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+    padding: 100px;
+    height: 100vh;
+    box-sizing: border-box;
+    /* margin-top: 50px; */
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: #333; */
+    background-color: black;
+    z-index: 1000; /* Fica sempre por cima dos outros elementos */
+    padding-top: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #0784b5;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    background-color: #152331;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logo, .menu, .contato {
+    display: flex;
+    
+}
+
+.logo {
+    flex: 1;
+    justify-content: end;
+    /* background-color: red; */
+}
+
+.menu {
+    flex: 2;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+.contato {
+    flex: 1;
+    /* background-color: green; */
+}
+
+.github, .linkedin {
+    width: 24px;
+}
+
+.foto-perfil{
+    border-radius: 50%; /* Faz a imagem redonda */
+    object-fit: cover; /* Garante que a imagem se ajuste bem no círculo */
+}
