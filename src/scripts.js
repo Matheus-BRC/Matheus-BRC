@@ -20,6 +20,7 @@ function adjustLayout() {
         document.getElementsByClassName("contato")[0].style.display = "none";
         document.getElementsByClassName("menu-hamburger")[0].style.display = "flex";
         document.getElementsByClassName("foto")[0].style.display = "flex";
+        document.getElementsByClassName("footer-contato")[0].style.flexDirection = "column";
     }
     else{
         document.getElementsByClassName("logo")[0].style.justifyContent = "end";
@@ -27,6 +28,7 @@ function adjustLayout() {
         document.getElementsByClassName("contato")[0].style.display = "flex";
         document.getElementsByClassName("menu-hamburger")[0].style.display = "none";
         document.getElementsByClassName("foto")[0].style.display = "none";
+        document.getElementsByClassName("footer-contato")[0].style.flexDirection = "row";
     }
 }
 
