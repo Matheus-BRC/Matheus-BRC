@@ -8,3 +8,28 @@ window.onscroll = function() {
         navbar.style.border = "none";
     }
 };
+
+function adjustLayout() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    
+    // alert(screenWidth);
+    if(screenWidth <= 1200){
+        document.getElementsByClassName("logo")[0].style.justifyContent = "center";
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("contato")[0].style.display = "none";
+        document.getElementsByClassName("menu-hamburger")[0].style.display = "flex";
+        document.getElementsByClassName("foto")[0].style.display = "flex";
+    }
+    else{
+        document.getElementsByClassName("logo")[0].style.justifyContent = "end";
+        document.getElementsByClassName("menu")[0].style.display = "flex";
+        document.getElementsByClassName("contato")[0].style.display = "flex";
+        document.getElementsByClassName("menu-hamburger")[0].style.display = "none";
+        document.getElementsByClassName("foto")[0].style.display = "none";
+    }
+}
+
+// Ajusta o layout ao carregar a página e ao redimensionar
+window.addEventListener('load', adjustLayout);
+window.addEventListener('resize', adjustLayout);
