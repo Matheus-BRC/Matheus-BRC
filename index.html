@@ -9,30 +9,49 @@
 </head>
 <body>
     <nav id="navbar">
-        <ul>
+        <div class="topo">
             <div class="menu-hamburger">
-                <li><button><img src="./assets/menu_hamburger_icon.svg" alt="menu" class="hamburger"></button></li>
+                <ul>
+                    <li id="li-hamburger"><button id="button-hamburger" onclick="mostraMenu()"><img src="./assets/menu_hamburger_icon.svg" alt="menu" class="hamburger"></button></li>
+                </ul>
             </div>
             <div class="logo">
-                <li><a href="#home" class="nome">Matheus.Carvalho</a></li>
+                <ul>
+                    <li><a href="#home" class="nome">Matheus.Carvalho</a></li>
+                </ul>
             </div>
-            <div class="menu">
+            <div id="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div id="sociais">
+                <ul>
+                    <li><a href="https://github.com/Matheus-BRC"><img src="./assets/github_icon.svg" alt="github" class="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/matheus-carvalho-4013941a2/"><img src="./assets/linkedin_icon.svg" alt="linkedin" class="linkedin"></a></li>
+                    <li><a href="mailto:matheusbatista327@gmail.com"><img src="./assets/gmail_icon.svg" alt="gmail" class="gmail"></a></li>
+                    <li><a href="https://wa.me/5511964730352"><img src="./assets/whatsapp_icon.svg" alt="whatsapp" class="whatsapp"></a></li>
+                </ul>
+            </div>
+            <div class="foto">
+                <ul>
+                    <li id="li-foto"><a href="#contato"><img src="./assets/Perfil.png" alt="Matheus Carvalho" class="foto-perfil"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu-suspenso" class="menu-suspenso">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
-            </div>
-            <div class="contato">
-                <li><a href="https://github.com/Matheus-BRC"><img src="./assets/github_icon.svg" alt="github" class="github"></a></li>
-                <li><a href="https://www.linkedin.com/in/matheus-carvalho-4013941a2/"><img src="./assets/linkedin_icon.svg" alt="linkedin" class="linkedin"></a></li>
-                <li><a href="mailto:matheusbatista327@gmail.com"><img src="./assets/google_mail_icon.svg" alt="gmail" class="gmail"></a></li>
-                <li><a href="https://wa.me/5511964730352"><img src="./assets/whatsapp_icon.svg" alt="whatsapp" class="whatsapp"></a></li>
-            </div>
-            <div class="foto">
-                <li><a href="#contato"><img src="./assets/Perfil.png" alt="Matheus Carvalho" class="foto-perfil"></a></li>
-            </div>
-        </ul>
+            </ul>
+        </div>
     </nav>
 
     <section id="home">
@@ -60,14 +79,14 @@
     <footer class="footer">
         <section id="contato">
             <div class="footer-contato">
-                <div>
+                <div class="footer-nome">
                     <h1>Matheus.Carvalho</h1>
                     <p>Entre em contato.</p>
                 </div>
                 <ul>
                     <li><a href="https://github.com/Matheus-BRC"><img src="./assets/github_icon.svg" alt="github" class="github"><span>github.com/Matheus-BRC</span></a></li>
                     <li><a href="https://www.linkedin.com/in/matheus-carvalho-4013941a2/"><img src="./assets/linkedin_icon.svg" alt="linkedin" class="linkedin"><span>linkedin.com/in/matheus-carvalho-4013941a2/</span></a></li>
-                    <li><a href="mailto:matheusbatista327@gmail.com"><img src="./assets/google_mail_icon.svg" alt="gmail" class="gmail"><span>matheusbatista327@gmail.com</span></a></li>
+                    <li><a href="mailto:matheusbatista327@gmail.com"><img src="./assets/gmail_icon.svg" alt="gmail" class="gmail"><span>matheusbatista327@gmail.com</span></a></li>
                     <li><a href="https://wa.me/5511964730352"><img src="./assets/whatsapp_icon.svg" alt="whatsapp" class="whatsapp"><span>11 964730352</span></a></li>
                 </ul>
             </div>

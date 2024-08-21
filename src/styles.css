@@ -14,27 +14,29 @@ body, html {
 
 #navbar {
     position: fixed;
+    z-index: 1000; /* Fica sempre por cima dos outros elementos */
+}
+
+#navbar .topo {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
     top: 0;
     width: 100%;
     font-size: 18px;
     background-color: black;
-    z-index: 1000; /* Fica sempre por cima dos outros elementos */
     padding-top: 10px;
 }
 
-#navbar ul {
+#navbar .topo ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-#navbar ul li {
-    margin: 0 15px;
-}
-
-#navbar ul li a, #navbar ul li button{
-    color: #0784b5;
+#navbar .topo ul li a, #navbar ul li button{
+    color: #39ace7; /* #0784b5; */
     text-decoration: none;
     padding: 14px 20px;
     display: block;
@@ -42,15 +44,20 @@ body, html {
     border: none;
 }
 
-#navbar ul li a:hover, #navbar ul li button:hover {
+#navbar .topo ul li a:hover, #navbar ul li button:hover {
     background-color: #152331;
     margin-top: 5px;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.logo, .menu, .contato, .menu-hamburger, .foto {
+#menu ul li {
+    margin: 0 15px;
+}
+
+.logo, #menu, #sociais, .menu-hamburger, .foto {
     display: flex;
+    margin: 0 10px;
 }
 
 .menu-hamburger, .foto {
@@ -64,21 +71,17 @@ body, html {
     /* background-color: red; */
 }
 
-.menu {
+#menu {
     flex: 2;
     justify-content: center;
     /* background-color: yellow; */
 }
 
-.contato {
+#sociais {
     flex: 1;
     display: flex;
     /* justify-content: center; */
     /* background-color: green; */
-}
-
-#navbar ul .contato li {
-    margin: 0;
 }
 
 .nome{
@@ -94,7 +97,38 @@ body, html {
     border-radius: 50%; /* Faz a imagem redonda */
     object-fit: cover; /* Garante que a imagem se ajuste bem no círculo */
     padding: 2px;
-    border: #0784b5 solid 2px;
+    border: #39ace7 solid 2px;
+}
+
+.menu-suspenso {
+    display: none;
+}
+
+.menu-suspenso.show {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 68px;
+    width: 100%;
+    font-size: 18px;
+    background-color: black;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #39ace7;
+}
+
+.menu-suspenso.show ul {
+    list-style-type: none;
+}
+
+.menu-suspenso.show ul li {
+    
+}
+
+.menu-suspenso.show ul li a {
+    text-decoration: none;
+    color: #39ace7;
 }
 
 section {
@@ -106,7 +140,7 @@ section {
 
 footer {
     text-align: center;
-    border-top: solid 1px #0784b5;
+    border-top: solid 1px #39ace7;
     background-color: black;
     /* padding: 100px;
     height: 100vh;
@@ -114,8 +148,9 @@ footer {
 }
 
 footer section {
-    padding: 0;
     height: 0;
+    padding: 0;
+    margin: 20px 0;
     box-sizing: border-box;
 }
 
