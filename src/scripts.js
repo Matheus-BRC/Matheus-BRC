@@ -11,8 +11,8 @@ window.onscroll = function() {
 
 function ajustaLayout() {
     const screenWidth = window.innerWidth;
-    // const screenHeight = window.innerHeight;
-    // alert(screenWidth);
+    const screenHeight = window.innerHeight;
+    // alert(screenHeight + 'vh');
     if(screenWidth <= 1200){
         document.getElementsByClassName("logo")[0].style.justifyContent = "center";
         document.getElementById("menu").style.display = "none";
@@ -24,6 +24,11 @@ function ajustaLayout() {
         var listItems = document.querySelectorAll('#navbar ul li');     // Seleciona todos os elementos <li> dentro de #navbar
         listItems.forEach(function(li) {                                // Itera sobre cada elemento <li> e altera sua margem
             li.style.margin = '0';                                 // Define a nova margem
+        });
+
+        var sections = document.querySelectorAll('section');     // Seleciona todos os elementos <li> dentro de #navbar
+        sections.forEach(function(sec) {                                // Itera sobre cada elemento <li> e altera sua margem
+            sec.style.height = "200vh";                                 // Define a nova margem
         });
     }
     else{

@@ -5,6 +5,7 @@ body, html {
     padding: 0;
     font-family: monospace;
     font-size: 16px;
+    text-align: justify;
     background-color: black;
     color: #39ace7;
     background: repeating-linear-gradient(to bottom, black, #152331, black);
@@ -135,16 +136,77 @@ section {
     padding: 100px;
     height: 100vh;
     box-sizing: border-box;
-    /* margin-top: 50px; */
+}
+
+#home {
+    position: relative;
+    background-image: url('../assets/Five1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 100vh; /* Altura da sessão */
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Escurecimento com 50% de opacidade */
+    z-index: 1; /* Coloca a sobreposição acima da imagem */
+}
+
+#home * {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo esteja acima da sobreposição */
+}
+
+.download {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: #39ace7;
+    font-weight: bold;
+    border: solid 1px #39ace7;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #39ace7;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.hexagon {
+    background-color: #39ace7;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 300px;
+    height: 320px;
+}
+
+.imagem {
+    position:relative;
+    left: -40px;
+    background-color: #39ace7;
+    object-fit: cover; /* Garante que a imagem se ajuste bem no círculo */
+}
+
+.capa{
+    width: 400px;
 }
 
 footer {
     text-align: center;
     border-top: solid 1px #39ace7;
     background-color: black;
-    /* padding: 100px;
-    height: 100vh;
-    box-sizing: border-box; */
 }
 
 footer section {
